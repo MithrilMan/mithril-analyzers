@@ -95,3 +95,9 @@ dotnet restore Mithril.Analyzers.sln
 dotnet build Mithril.Analyzers.sln --no-restore
 dotnet test Mithril.Analyzers.sln --no-build
 ```
+
+## Releasing
+
+Push a semver tag like `v0.1.0` for a commit reachable from `main` after updating `src/Mithril.Analyzers/Mithril.Analyzers.csproj`. The `Release Package` GitHub Action validates the tag/version pair, builds and tests the solution, and publishes the `.nupkg` as a GitHub Release asset.
+
+See [docs/releasing.md](docs/releasing.md) for the full checklist.

@@ -21,4 +21,4 @@
 
 ## Follow-ups
 
-- Revisit package publishing metadata and CI once the first public release flow is added.
+- Release flow is now documented in `.codex/notes/workflow/release-flow.md` and `docs/releasing.md`.

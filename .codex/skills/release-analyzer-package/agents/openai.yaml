@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Analyzer Package"
+  short_description: "Prepare and publish a tagged Mithril.Analyzers release."
+  default_prompt: "Release the next Mithril.Analyzers package version using the repository release workflow."
