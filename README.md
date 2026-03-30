@@ -98,6 +98,6 @@ dotnet test Mithril.Analyzers.sln --no-build
 
 ## Releasing
 
-Push a semver tag like `v0.1.0` for a commit reachable from `main` after updating `src/Mithril.Analyzers/Mithril.Analyzers.csproj`. The `Release Package` GitHub Action validates the tag/version pair, builds and tests the solution, and publishes the `.nupkg` as a GitHub Release asset.
+Push a semver tag like `v0.1.0` for a commit reachable from `main` after updating `src/Mithril.Analyzers/Mithril.Analyzers.csproj` and configuring the `NUGET_API_KEY` GitHub Actions secret. The `Release Package` GitHub Action validates the tag/version pair, builds and tests the solution, publishes the package to NuGet.org, and attaches the `.nupkg` to the matching GitHub Release.
 
 See [docs/releasing.md](docs/releasing.md) for the full checklist.

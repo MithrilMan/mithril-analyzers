@@ -1,7 +1,7 @@
 # [DEC-20260330-02] Release the package from semver tags on main via GitHub Releases
 
 - Date: 2026-03-30
-- Status: accepted
+- Status: superseded
 - Domain: workflow
 - Keywords:
   - release
@@ -9,7 +9,7 @@
   - tagging
   - packaging
 - Supersedes: none
-- Superseded-By: none
+- Superseded-By: DEC-20260330-03
 
 ## Context
 
@@ -51,7 +51,7 @@
 
 - Releases become reproducible and repository-enforced instead of manual-only.
 - Version drift between source and tag becomes a hard failure instead of a silent mismatch.
-- The initial distribution channel is a GitHub Release asset; a future decision can extend the workflow to GitHub Packages or NuGet.org if feed-based distribution becomes necessary.
+- This decision established the tag-driven validation and GitHub Release path, but the distribution strategy was later extended by `DEC-20260330-03` to publish the same package to NuGet.org.
 
 ## Validation / Evidence
 

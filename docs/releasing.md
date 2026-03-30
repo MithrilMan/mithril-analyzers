@@ -6,7 +6,8 @@
 
 - Package version: `src/Mithril.Analyzers/Mithril.Analyzers.csproj`
 - Release workflow: `.github/workflows/release-package.yml`
-- Distribution artifact: `.nupkg` attached to the GitHub Release
+- Distribution artifacts: NuGet.org package publication plus `.nupkg` attached to the GitHub Release
+- Required secret: `NUGET_API_KEY` GitHub Actions secret with push scope for `Mithril.Analyzers`
 
 ## Release Tag Format
 
@@ -44,10 +45,12 @@ The workflow strips the leading `v`, verifies the remaining string matches the p
 7. Wait for the `Release Package` workflow to finish. It will:
    - fail if the tagged commit is not reachable from `origin/main`
    - fail if the tag version and project version diverge
+   - fail if the `NUGET_API_KEY` secret is missing
    - restore, build, test, and pack the solution
+   - publish the `.nupkg` to `https://api.nuget.org/v3/index.json`
    - create or update the GitHub Release for that tag and upload the `.nupkg`
 
 ## Notes
 
-- Re-running the workflow for the same tag updates the uploaded package asset instead of creating a second release.
-- This flow intentionally publishes a GitHub Release asset rather than GitHub Packages, keeping distribution simple for the first OSS release path. A registry publish job can be added later if package-feed consumption becomes a priority.
+- Re-running the workflow for the same tag skips duplicate NuGet.org publication and updates the uploaded GitHub Release asset.
+- Store the NuGet.org API key only in the repository or organization GitHub Actions secrets; do not commit it or paste it into workflow files.

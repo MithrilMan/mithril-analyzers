@@ -5,7 +5,7 @@ description: Prepare and publish a new `Mithril.Analyzers` package release. Use 
 
 # Release Analyzer Package
 
-Release `Mithril.Analyzers` through the repository workflow instead of inventing one-off commands. Keep the source version, tag, validation evidence, and GitHub Release aligned.
+Release `Mithril.Analyzers` through the repository workflow instead of inventing one-off commands. Keep the source version, tag, validation evidence, NuGet.org publication, and GitHub Release aligned.
 
 ## Workflow
 
@@ -19,8 +19,9 @@ Release `Mithril.Analyzers` through the repository workflow instead of inventing
    - `dotnet test Mithril.Analyzers.sln --no-build`
 6. Commit the release-ready phase with `phase-commit-workflow`. Do not mix unrelated files into the release commit.
 7. Ensure the release commit is on `main`, then create an annotated tag in the form `vX.Y.Z` or `vX.Y.Z-suffix`.
-8. Push `main` and the tag. The GitHub Action will reject tags that do not match the project version or are not reachable from `main`.
-9. Report the release result, including any failed gate, the created tag, and the GitHub Release/package asset outcome.
+8. Confirm the `NUGET_API_KEY` GitHub Actions secret exists before pushing the release tag.
+9. Push `main` and the tag. The GitHub Action will reject tags that do not match the project version or are not reachable from `main`.
+10. Report the release result, including any failed gate, the created tag, the NuGet.org publish outcome, and the GitHub Release/package asset outcome.
 
 ## Guardrails
 
@@ -28,7 +29,7 @@ Release `Mithril.Analyzers` through the repository workflow instead of inventing
 - Keep the tag and `<Version>` identical apart from the leading `v`.
 - Prefer annotated tags over lightweight tags.
 - Use pre-release suffixes such as `-rc.1` when the user asks for a non-final release; the workflow marks those GitHub Releases as pre-releases automatically.
-- If the user asks for package-feed publication, explain that the current repository automation publishes a GitHub Release asset, not GitHub Packages or NuGet.org.
+- Keep the NuGet.org API key in GitHub Actions secrets only; never place it in tracked files or shell history captures.
 
 ## References
 
