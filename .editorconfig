@@ -1,0 +1,23 @@
+root = true
+
+[*.cs]
+dotnet_diagnostic.BGA001.severity = warning
+dotnet_diagnostic.BGA002.severity = warning
+dotnet_diagnostic.BGA003.severity = warning
+dotnet_diagnostic.BGA004.severity = suggestion
+dotnet_diagnostic.BGA005.severity = suggestion
+
+mithril_analyzers.max_accessor_lines = 60
+mithril_analyzers.allow_missing_cancellation_for_tests = true
+
+[src/**/*.cs]
+mithril_analyzers.max_file_lines = 800
+mithril_analyzers.max_method_lines = 100
+
+[tests/**/*.cs]
+mithril_analyzers.max_file_lines = 1000
+mithril_analyzers.max_method_lines = 140
+
+[tools/**/*.cs]
+mithril_analyzers.max_file_lines = 800
+mithril_analyzers.max_method_lines = 100

@@ -6,4 +6,4 @@
 
 ## Leaf Notes
 
-- Add focused active leaf notes for this branch.
+- `project-bootstrap.md` - chosen package shape, V1 scope boundary, and packaging constraints.

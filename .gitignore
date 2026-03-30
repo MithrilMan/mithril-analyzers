@@ -15,8 +15,8 @@ bld/
 # Visual Studio
 .vs/
 *.user
-*.suo
 *.userosscache
+*.suo
 *.sln.docstates
 *.rsuser
 
@@ -24,6 +24,7 @@ bld/
 [Dd]ebugPublic/
 [Rr]eleases/
 build/
+artifacts/
 **/[Pp]ublish/
 
 # NuGet
@@ -37,13 +38,15 @@ project.lock.json
 
 # Test results
 [Tt]est[Rr]esult*/
+TestResults/
 [Bb]uild[Ll]og.*
 *.trx
 *.coverage
 *.coveragexml
 
-# Rider
+# Rider / editors
 .idea/
+.vscode/
 *.sln.iml
 
 # OS files
@@ -53,6 +56,7 @@ Desktop.ini
 .DS_Store
 
 # Misc
+*.cache
 *.tmp
 *.bak
 *.swp

@@ -6,4 +6,4 @@
 
 ## Leaf Notes
 
-- Add focused active leaf notes for this branch.
+- `v1-diagnostic-scope.md` - shipped rules, intentional exclusions, and deferred V2 work.

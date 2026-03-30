@@ -6,4 +6,4 @@
 
 ## Leaf Notes
 
-- Add focused active leaf notes for this branch.
+- `testing-harness.md` - current validation approach and the Roslyn test-stack caveat discovered during bootstrap.

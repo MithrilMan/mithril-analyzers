@@ -11,11 +11,14 @@ Durable domain branches are project-specific and agent-owned; only `inbox/`, `ar
 
 ## Current Domain Branches
 
-- Add project-specific domain branches here as they emerge (for example `architecture/`, `workflow/`, `integrations/`).
+- `architecture/INDEX.md` - project shape, package boundaries, and durable structural constraints.
+- `rules/INDEX.md` - shipped diagnostic scope and rule-behavior notes.
+- `workflow/INDEX.md` - validation, testing, and delivery workflow notes.
 
 ## Pinned Leaf Notes
 
-- Add current high-signal leaf notes here when they exist.
+- `architecture/project-bootstrap.md` - bootstrap decisions for package identity, solution layout, and analyzer-only packing.
+- `workflow/testing-harness.md` - why tests use a direct Roslyn/xUnit harness in this bootstrap phase.
 
 ## Rules
 

@@ -10,22 +10,13 @@ Nearest nested `AGENTS.md` overrides and extends these rules.
 - Record only project-development decisions in the decisions registry rooted at `docs/specs/DECISIONS.md`.
 - If a new decision conflicts with existing decisions, stop and ask the user before updating.
 
-## Template Bootstrap
+## Project Invariants
 
-When reusing this repository as a new-project template, customize these items first:
-
-1. Update project-specific invariants in this file (for example auth mode, API boundaries, mandatory integrations).
-2. Create required docs scaffolding if missing:
-   - `docs/specs/DECISIONS.md`
-   - `docs/specs/decisions/INDEX.md`
-   - `docs/specs/TECHNICAL_ISSUES.md`
-   - `docs/specs/technical-issues/INDEX.md`
-3. Run `scripts/bootstrap-template.ps1` to initialize missing baseline files/branches.
-4. Run `scripts/validate-template.ps1` and resolve any reported failures.
-5. Declare active nested `AGENTS.md` files only if they exist.
-6. Keep `.codex/personas/` and `.codex/skills/` generic; move project-only constraints into root or nested `AGENTS.md`.
-7. Initialize `.codex/notes/` branches for the new project domains before first feature work.
-8. Remove this section Template Bootstrap after completing these steps to not bloat the instructions for future agents executing in this repository.
+- The repository owns the `Mithril.Analyzers` Roslyn package and its supporting docs/tests.
+- Keep V1 focused on `BGA001` to `BGA005`; do not pull `BGA100+` heuristics into the same change unless the user explicitly widens scope.
+- Use `.editorconfig` as the primary configuration surface for thresholds and behavior. Do not add XML configuration files for V1.
+- Package outputs must remain analyzer-only. Do not introduce runtime assets or application-facing dependencies in the produced NuGet package.
+- Ignore generated code by default and prefer conservative diagnostics over noisy heuristics.
 
 ## Task Execution Loop
 
@@ -108,6 +99,13 @@ Apply this loop for non-trivial work:
   - `needs-revalidation` for useful notes that may still be true but need a fresh check before reuse
   - `superseded` only when a newer note replaces the same topic
 - When evidence changes a prior claim, mark old note `Status: superseded`, link `Superseded-By`, and keep detailed history in `archive/` only when that history is still useful.
+
+## Analyzer Package Changes
+
+- Keep one analyzer per diagnostic and keep shared helpers narrowly focused.
+- Favor syntax- and symbol-level checks that are easy to explain over "clever" heuristics with opaque behavior.
+- Keep diagnostic IDs stable and document every shipped rule in `README.md` plus `docs/rules/`.
+- Prefer option names under the `mithril_analyzers.*` prefix unless a future accepted decision changes the convention.
 
 ## Backend Changes
 
