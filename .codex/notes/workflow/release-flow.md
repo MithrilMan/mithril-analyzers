@@ -22,7 +22,9 @@
 - The `NUGET_API_KEY` secret is now a release prerequisite in GitHub before pushing a release tag.
 - The documented release path now targets both NuGet.org and GitHub Releases from the same tag workflow.
 - The published release URL is `https://github.com/MithrilMan/mithril-analyzers/releases/tag/v0.1.0`.
+- If the workflow fails with `Tag version 'X.Y.Z' does not match project version 'A.B.C'.`, the fix is to update `src/Mithril.Analyzers/Mithril.Analyzers.csproj`, commit the version bump on `main`, then recreate the release tag so it points to that commit.
 
 ## Follow-ups
 
 - Run the next semver tag after setting `NUGET_API_KEY` to validate the remote GitHub Actions to NuGet.org publish path end to end.
+- When a release tag is created too early, delete and recreate that tag only after the matching version commit is on `main`.

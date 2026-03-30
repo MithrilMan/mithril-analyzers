@@ -4,7 +4,7 @@
     <AssemblyName>Mithril.Analyzers</AssemblyName>
     <RootNamespace>Mithril.Analyzers</RootNamespace>
     <PackageId>Mithril.Analyzers</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Description>MIT-licensed Roslyn analyzers for backend maintainability and architecture guardrails.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
