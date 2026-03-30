@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Notepad Prune"
+  short_description: "Reconcile and prune personal notes"
+  default_prompt: "Use $agent-notepad-prune to merge duplicates, resolve contradictions, and archive stale notes in .codex/notes."

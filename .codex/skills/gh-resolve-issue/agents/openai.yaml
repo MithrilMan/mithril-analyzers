@@ -1,0 +1,7 @@
+interface:
+  display_name: "GH Issue Resolver"
+  short_description: "Triage and resolve GitHub issues via gh"
+  default_prompt: "Use $gh-resolve-issue to triage and resolve issue #123 in the current repository, or pick the first open issue that is not labeled automation:nop."
+
+policy:
+  allow_implicit_invocation: false

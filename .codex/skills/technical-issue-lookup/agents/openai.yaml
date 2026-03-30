@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Issue Lookup"
+  short_description: "Find past fixes for similar technical issues"
+  default_prompt: "Use $technical-issue-lookup to check if this technical issue was already solved and propose the prior fix."

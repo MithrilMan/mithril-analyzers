@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Notepad Capture"
+  short_description: "Capture atomic notes in a tree"
+  default_prompt: "Use $agent-notepad-capture to add or update small topic notes in the correct .codex/notes branch."

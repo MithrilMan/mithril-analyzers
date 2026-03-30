@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mithril.Analyzers", "src\Mithril.Analyzers\Mithril.Analyzers.csproj", "{29C787FC-B178-4030-9A20-F3572684F52F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mithril.Analyzers.Tests", "tests\Mithril.Analyzers.Tests\Mithril.Analyzers.Tests.csproj", "{D4C31704-5E5A-4E5C-8D78-94188649094A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Debug|x64.Build.0 = Debug|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Debug|x86.Build.0 = Debug|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Release|x64.ActiveCfg = Release|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Release|x64.Build.0 = Release|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Release|x86.ActiveCfg = Release|Any CPU
+		{29C787FC-B178-4030-9A20-F3572684F52F}.Release|x86.Build.0 = Release|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Debug|x64.Build.0 = Debug|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Debug|x86.Build.0 = Debug|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Release|x64.ActiveCfg = Release|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Release|x64.Build.0 = Release|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4C31704-5E5A-4E5C-8D78-94188649094A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29C787FC-B178-4030-9A20-F3572684F52F} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{D4C31704-5E5A-4E5C-8D78-94188649094A} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+	EndGlobalSection
+EndGlobal

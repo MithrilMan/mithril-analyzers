@@ -1,0 +1,4 @@
+interface:
+  display_name: "Technical Issue Log"
+  short_description: "Log solved technical issues and fixes"
+  default_prompt: "Use $technical-issue-log to record this resolved technical issue with root cause and fix."

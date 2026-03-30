@@ -1,0 +1,4 @@
+interface:
+  display_name: "Persona Orchestration"
+  short_description: "Coordinate personas as working roles"
+  default_prompt: "Use $persona-orchestration to select coordinator, executor, and reviewers and require concrete contributions from each active persona."

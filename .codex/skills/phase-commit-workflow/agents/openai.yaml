@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Commit Workflow"
+  short_description: "Create clean phase-based commits with checks"
+  default_prompt: "Use $phase-commit-workflow to prepare a high-quality atomic commit for the completed phase."

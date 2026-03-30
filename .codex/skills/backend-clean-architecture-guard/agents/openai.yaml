@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend Architecture Guard"
+  short_description: "Guard backend Clean Architecture and SOLID"
+  default_prompt: "Use $backend-clean-architecture-guard before changing backend code in this repository."

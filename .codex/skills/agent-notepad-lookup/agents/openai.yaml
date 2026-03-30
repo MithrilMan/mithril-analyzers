@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Notepad Lookup"
+  short_description: "Tree-first retrieval of personal notes"
+  default_prompt: "Use $agent-notepad-lookup to fetch relevant notes from .codex/notes branches before implementation."

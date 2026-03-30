@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision Log Guard"
+  short_description: "Enforce decision log and conflict-check workflow"
+  default_prompt: "Apply decision-register discipline for this repository."

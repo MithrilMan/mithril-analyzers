@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Notepad Map"
+  short_description: "Evolve note tree structure"
+  default_prompt: "Use $agent-notepad-map to reorganize .codex/notes into focused branches and keep indexes discoverable."
